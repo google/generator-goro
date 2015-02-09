@@ -1,0 +1,27 @@
+{% filter csscomp:"cssprefixer -vendors=o" %}
+  {% filter csscomp:"scss" %}
+
+    {% comment %}
+      This filter compiles SASS, adds vendor prefixes, and minifies the CSS.
+      There are other options you can use with this filter such as using GCS
+      (Google Closure Stylesheets).
+
+      This information is located here under csscomp:
+      https://help.googlegoro.com/docs/1341012532686/template-tags.html
+    {% endcomment %}
+
+    {% site "glue-boilerplate-angular" %}
+
+    @import url(//www.google.com/css/maia.css);
+
+    {% var as glue_scss_config %}{
+      "components": [
+        "pagination"
+      ]
+    }{% endvar %}
+    {% include "glue/scss/webstandard/package.scss.inc.tpl" with glue_scss_config=glue_scss_config %}
+
+    {% include "glue/boilerplate/angular/css/components/my-component.scss" %}
+
+  {% endfilter %}
+{% endfilter %}

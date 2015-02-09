@@ -1,0 +1,6 @@
+.*node_modules/.*$
+.*gruntfile\.js$
+.*package\.json$
+.*.\goroignore$
+.*.\editorconfig$
+.*.\DS_Store$

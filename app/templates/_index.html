@@ -1,0 +1,55 @@
+{% extends "<%= projectDomain %><%= projectPath %>base.tpl" %}
+
+{% site "glue-boilerplate-angular" %}
+
+
+{% block main %}
+<div>
+  <div class="maia-aux" data-ng-controller="HomeCtrl as homeCtrl">
+
+    <h1>Boilerplate</h1>
+    <div class="maia-cols">
+      <div class="maia-col-9">
+        {% blockgnode "content" %}This is placeholder text. Click to edit me.{% endblockgnode %}
+
+        <div class="my-directive" data-my-directive data-favorite-color="homeCtrl.favoriteColor">
+        </div>
+      </div>
+      <div class="maia-col-3">
+        {% gnode "side-content" %}
+      </div>
+    </div>
+
+    {% comment %}
+      Example glue pagination component. For more documentation and demos, visit:
+      https://glue-developer-guide.googlegoro.com/site/index.html?goro_mode=export
+      https://glue-developer-guide.googlegoro.com/site/docs/skins/webstandard/ngpagination.html
+    {% endcomment %}
+
+    <div class="glue-pagination glue-pagination-transition-pan" data-glue-pagination-model="homeCtrl.carouselModel" data-ng-cloak>
+
+      <ul class="glue-pagination-pages">
+        {% db boilerplate_db.carousel search "#sort:sort #order:ascending" as carousel_items %}
+        {% for item in carousel_items %}
+        <li>
+          <h2>{{item.title}}</h2>
+          <div>{{item.content}}</div>
+        </li>
+        {% endfor %}
+      </ul>
+
+
+      <div class="glue-pagination-controls">
+        <div class="glue-pagination-page-list"></div>
+
+        {# Use msg tags around data attributes that require translation. #}
+        <div class="glue-pagination-next"
+            data-glue-pagination-label="{% msg %}Next{% endmsg %}">Next</div>
+        <div class="glue-pagination-previous"
+            data-glue-pagination-label="{% msg %}Previous{% endmsg %}">Previous</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

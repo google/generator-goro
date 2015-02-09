@@ -1,0 +1,9 @@
+<div data-ng-click="directiveCtrl.toggleActive()"
+    data-ng-class="{'boilerplate-active': directiveCtrl.selected}">
+  <h3>My animals</h3>
+  <ul>
+    <li ng-repeat="animal in directiveCtrl.getAnimals()">
+      <p>I have a {[animal.color]} {[animal.type]}.</p>
+    </li>
+  </ul>
+</div>
