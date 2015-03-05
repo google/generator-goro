@@ -6,13 +6,16 @@ This boilerplate is intended to jumpstart creation of marketing websites on Goro
 
 Install generator-goro:
 
-```npm install -g generator-goro```
+    npm install -g generator-goro
 
 Make a new directory then cd into it:
 
-```mkdir my-project && cd $_```
+    mkdir my-project && cd $_
 
-Run ```yo goro``` and answer the questions.
+Run
+
+    yo goro
+and answer the questions.
 
 ### Writing JavaScript
 Please be sure your Javascript follows the [Google Javascript](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) and [Google AngularJS](https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html) style guides. Google doesn't write Angular the same way it is shown on the external AngularJS site.
