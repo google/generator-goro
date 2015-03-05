@@ -1,47 +1,30 @@
-# generator-goro [![Build Status](https://secure.travis-ci.org/fractionwhole/generator-goro.png?branch=master)](https://travis-ci.org/fractionwhole/generator-goro)
+# generator-goro Overview
 
-> [Yeoman](http://yeoman.io) generator
+This boilerplate is intended to jumpstart creation of marketing websites on Goro that use AngularJS.
 
+### Usage
 
-## Getting Started
+Install generator-goro:
 
-### What is Yeoman?
+```npm install -g generator-goro```
 
-Trick question. It's not a thing. It's this guy:
+Make a new directory then cd into it:
 
-![](http://i.imgur.com/JHaAlBJ.png)
+```mkdir my-project && cd $_```
 
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
+Run ```yo goro``` and answer the questions.
 
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+### Writing JavaScript
+Please be sure your Javascript follows the [Google Javascript](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) and [Google AngularJS](https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html) style guides. Google doesn't write Angular the same way it is shown on the external AngularJS site.
 
-```bash
-npm install -g yo
-```
+Using AngularJS in Goro is some what tricky due to the usage of the Closure Compiler. But most of this is resolved for you with the boilerplate. Read the Goro documentation on using AngularJS with Goro for more info.
 
-### Yeoman Generators
+Easily debug changes in your site by appending ?debug=1 to your goro preview url. This will use the uncompiled js and make it easier to debug.
 
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
+### More About Yeoman
 
-To install generator-goro from npm, run:
+To learn more about Yeoman check out the [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started). Yeoman also heaviliy relies on [Grunt](http://gruntjs.com) and [Bower](http://bower.io). 
 
-```bash
-npm install -g generator-goro
-```
+### License
 
-Finally, initiate the generator:
-
-```bash
-yo goro
-```
-
-### Getting To Know Yeoman
-
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
-
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
-
-
-## License
-
-MIT
+Apache 2.0
