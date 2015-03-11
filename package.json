@@ -1,14 +1,14 @@
 {
   "name": "generator-goro",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "fractionwhole/generator-goro",
+  "repository": "https://github.com/google/generator-goro",
   "author": {
     "name": "Brandon Gray",
     "email": "",
-    "url": "https://github.com/fractionwhole"
+    "url": "https://github.com/google/generator-goro"
   },
   "engines": {
     "node": ">=0.10.0"
