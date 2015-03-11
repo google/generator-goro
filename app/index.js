@@ -123,7 +123,6 @@ var GoroGenerator = yeoman.generators.Base.extend({
       this.src.copy('index.html_data/side-content.gnode', 'index.html_data/side-content.gnode');
       this.src.copy('js/main.min.js', 'js/main.min.js');
       this.src.copy('js/components/my-component/my-directive-template.html', 'js/components/my-component/my-directive-template.html');
-      this.src.copy('README', 'README');
   },
 
   install: function () {
