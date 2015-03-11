@@ -1,8 +1,8 @@
 {
   "name": "generator-goro",
   "version": "1.0.0",
-  "description": "Yeoman generator",
-  "license": "MIT",
+  "description": "Yeoman generator intended to jumpstart creation of marketing websites on Goro that use AngularJS.",
+  "license": "Apache License Version 2.0",
   "main": "app/index.js",
   "repository": "https://github.com/google/generator-goro",
   "author": {
