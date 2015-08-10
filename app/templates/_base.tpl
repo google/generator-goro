@@ -1,3 +1,5 @@
+{% extends "global.layouts/maia.tpl" %}
+
 {% comment %}
 Copyright 2015 Google Inc. All Rights Reserved.
 
@@ -13,8 +15,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 {% endcomment %}
-
-{% extends "global.layouts/maia.tpl" %}
 
 {# Use this block for defining global variables that apply to the entire page or site. #}
 {% block global %}
@@ -34,7 +34,7 @@ limitations under the License.
 {% block body %}<body data-ng-app="boilerplateNg">{% endblock %}
 
 {% block body-base %}
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 
   <script type="text/ng-template" id="/boilerplate/my-component/my-directive-template.html">
     {% include "<%= projectDomain %><%= projectPath %>js/components/my-component/my-directive-template.html" %}
