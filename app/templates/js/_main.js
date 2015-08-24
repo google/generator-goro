@@ -24,7 +24,6 @@
 // Components.
 {% include "<%= projectDomain %><%= projectPath %>js/components/my-component/my-component-controller.js" %}
 {% include "<%= projectDomain %><%= projectPath %>js/components/my-component/my-component-directive.js" %}
-{% include "<%= projectDomain %><%= projectPath %>js/components/my-component/my-component.js" %}
 
 // Controllers.
 {% include "<%= projectDomain %><%= projectPath %>js/sections/home-controller.js" %}
