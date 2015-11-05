@@ -115,11 +115,11 @@ var GoroGenerator = yeoman.generators.Base.extend({
       this.template('js/sections/_home-controller.js', 'js/sections/home-controller.js');
       this.template('js/components/my-component/_my-component-controller.js', 'js/components/my-component/my-component-controller.js');
       this.template('js/components/my-component/_my-component-directive.js', 'js/components/my-component/my-component-directive.js');
+      this.template('css/_default.min.css', 'css/default.min.css');
 
       // Copy non-template files
       this.src.copy('package.json', 'package.json');
       this.src.copy('config.inc.tpl', 'config.inc.tpl');
-      this.src.copy('css/default.min.css', 'css/default.min.css');
       this.src.copy('css/components/my-component.scss', 'css/components/my-component.scss');
       this.src.copy('index.html_data/side-content.gnode', 'index.html_data/side-content.gnode');
       this.src.copy('js/components/my-component/my-directive-template.html', 'js/components/my-component/my-directive-template.html');
