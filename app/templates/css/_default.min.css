@@ -28,14 +28,35 @@ limitations under the License.
 
     {% site "glue-boilerplate-angular" %}
 
+    {% include "<%= projectDomain %><%= projectPath %>config.inc.tpl" %}
+
     @import url(//www.google.com/css/maia.css);
 
+    {% comment %}
+      This is the glue scss package loader for web standard/Maia. It doesn't
+      support components other than pagination. If you'd like base skins for
+      glue components, use the base skin loader shown further down.
+    {% endcomment %}
     {% var as glue_scss_config %}{
       "components": [
         "pagination"
       ]
     }{% endvar %}
-    {% include "glue/scss/webstandard/package.scss.inc.tpl" with glue_scss_config=glue_scss_config %}
+    {% var as glue_css_package %}"glue/releases/{{glue_version}}/scss/webstandard/package.scss.inc.tpl"{% endvar %}
+    {% include glue_css_package with glue_scss_config=glue_scss_config %}
+
+    {% comment %}
+      This loads basic skins for glue components. Many components are supported.
+      The skins are very simple and you'd be expected to customize them.
+      Separate each component name with a comma in the scss_glue_components
+      variable.
+    {% endcomment %}
+    {% var as glue_css_base_macro %}"glue/releases/{{glue_version}}/scss/package.scss.inc.tpl"{% endvar %}
+    {% include glue_css_base_macro %}
+    {% var as scss_glue_components %}[
+      "show"
+    ]{% endvar %}
+    {% render glue_scss with components=scss_glue_components %}
 
     {% include "glue/boilerplate/angular/css/components/my-component.scss" %}
 
