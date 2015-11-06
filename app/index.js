@@ -107,23 +107,23 @@ var GoroGenerator = yeoman.generators.Base.extend({
 
       // Process templates
       this.template('_gruntfile.js', 'gruntfile.js');
-      this.template('_base.tpl', 'base.tpl');
-      this.template('_index.html', 'index.html');
-      this.template('js/_main.js', 'js/main.js');
-      this.template('js/_main.min.js', 'js/main.min.js');
-      this.template('js/_app.js', 'js/app.js');
-      this.template('js/_my-service.js', 'js/my-service.js');
-      this.template('js/sections/_home-controller.js', 'js/sections/home-controller.js');
-      this.template('js/components/my-component/_my-component-controller.js', 'js/components/my-component/my-component-controller.js');
-      this.template('js/components/my-component/_my-component-directive.js', 'js/components/my-component/my-component-directive.js');
-      this.template('css/_default.min.css', 'css/default.min.css');
+      this.template('_base.tpl', this.projectFullPath + 'base.tpl');
+      this.template('_index.html', this.projectFullPath + 'index.html');
+      this.template('js/_main.js', this.projectFullPath + 'js/main.js');
+      this.template('js/_main.min.js', this.projectFullPath + 'js/main.min.js');
+      this.template('js/_app.js', this.projectFullPath + 'js/app.js');
+      this.template('js/_my-service.js', this.projectFullPath + 'js/my-service.js');
+      this.template('js/sections/_home-controller.js', this.projectFullPath + 'js/sections/home-controller.js');
+      this.template('js/components/my-component/_my-component-controller.js', this.projectFullPath + 'js/components/my-component/my-component-controller.js');
+      this.template('js/components/my-component/_my-component-directive.js', this.projectFullPath + 'js/components/my-component/my-component-directive.js');
+      this.template('css/_default.min.css', this.projectFullPath + 'css/default.min.css');
 
       // Copy non-template files
       this.src.copy('package.json', 'package.json');
-      this.src.copy('config.inc.tpl', 'config.inc.tpl');
-      this.src.copy('css/components/my-component.scss', 'css/components/my-component.scss');
-      this.src.copy('index.html_data/side-content.gnode', 'index.html_data/side-content.gnode');
-      this.src.copy('js/components/my-component/my-directive-template.html', 'js/components/my-component/my-directive-template.html');
+      this.src.copy('config.inc.tpl', this.projectFullPath + 'config.inc.tpl');
+      this.src.copy('css/components/my-component.scss', this.projectFullPath + 'css/components/my-component.scss');
+      this.src.copy('index.html_data/side-content.gnode', this.projectFullPath + 'index.html_data/side-content.gnode');
+      this.src.copy('js/components/my-component/my-directive-template.html', this.projectFullPath + 'js/components/my-component/my-directive-template.html');
   },
 
   install: function () {
