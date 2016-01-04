@@ -17,7 +17,7 @@ limitations under the License.
 {# ------- Global Variables --------- #}
 {% var as app_domain %}"{{goro.page.site.domain}}"{% endvar %}
 {% var as app_path %}"{{goro.page.path_relative}}"{% endvar %}
-{% var as glue_version %}"v2_5"{% endvar %}
+{% var as glue_version %}"v3_0"{% endvar %}
 
 {# ------- Datasources -------------- #}
 {% var as boilerplate_db %}
