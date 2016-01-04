@@ -34,7 +34,8 @@ limitations under the License.
 {% block body %}<body data-ng-app="boilerplateNg">{% endblock %}
 
 {% block body-base %}
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
 
   <script type="text/ng-template" id="/boilerplate/my-component/my-directive-template.html">
     {% include "<%= projectDomain %><%= projectPath %>js/components/my-component/my-directive-template.html" %}
