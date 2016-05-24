@@ -18,7 +18,7 @@ Run
 and answer the questions.
 
 ### Writing JavaScript
-Please be sure your Javascript follows the [Google Javascript](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) and [Google AngularJS](https://google-styleguide.googlecode.com/svn/trunk/angularjs-google-style.html) style guides. Google doesn't write Angular the same way it is shown on the external AngularJS site.
+Please be sure your Javascript follows the [Google Javascript](https://google.github.io/styleguide/javascriptguide.xml) and [Google AngularJS](https://google.github.io/styleguide/angularjs-google-style.html) style guides. Google doesn't write Angular the same way it is shown on the external AngularJS site.
 
 Using AngularJS in Goro is some what tricky due to the usage of the Closure Compiler. But most of this is resolved for you with the boilerplate. Read the Goro documentation on using AngularJS with Goro for more info.
 
